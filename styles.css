@@ -1,0 +1,261 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #edb17e;
+  height: 1500px;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mainWrapper {
+  width: 900px;
+}
+
+header {
+  background-color: #664426;
+  height: 50px;
+  width: 100%;
+  opacity: 0.7;
+  color: #e9be95;
+  font-weight: 500;
+  text-transform: uppercase;
+  justify-content: center;
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 900px;
+}
+
+.buttons-wrapper {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.buttons-wrapper li {
+  list-style-type: none;
+  margin-left: 25px;
+}
+
+.mainMethodsList {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+.mainMethodsList li {
+  list-style: none;
+  width: 40%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #9e6e41;
+  margin-top: 40px;
+  border-radius: 12px;
+  background-color: #edb17e;
+  color: #20150a;
+}
+
+.mainMethodsList li:hover {
+  background-color: #ad7a4c;
+  transition: 0.7s;
+  color: #eee0d3;
+  cursor: pointer;
+}
+
+.mainContentText {
+  text-align: center;
+  font-size: 32px;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  color: #9e6e41;
+}
+
+.coffeImage {
+  width: 200px;
+  height: 200px;
+  transition: transform 0.6s ease-in-out;
+}
+
+.coffeImage:hover {
+  transform: rotate(360deg);
+}
+
+.coffeText {
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.coffeIcon {
+  background-image: url("./img/coffee-cup.svg");
+}
+
+.mainMethodDetails {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.methodItem {
+  list-style: none;
+  width: 812px;
+  height: 400px;
+  margin-top: 30px;
+  border-radius: 12px;
+  border: 1px solid #9e6e41;
+  background-color: #edb17e;
+  color: #20150a;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.methodItem:first-child {
+  margin-top: 25px;
+}
+
+.coffeLargeImage {
+  width: 300px;
+  height: 300px;
+  margin-left: -50px;
+}
+
+.coffeLargeText {
+  margin-left: 50px;
+  font-size: 17px;
+  padding-right: 70px;
+  margin-top: -15px;
+  color: #5a3b1b;
+}
+
+.coffeMethodLink {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #5a3b1b;
+}
+
+.coffeMethodLink:hover {
+  color: #eee0d3;
+}
+
+#notification {
+  display: none;
+  width: 300px;
+  height: 120px;
+  position: fixed;
+  right: 450px;
+  color: white;
+  background: #5a3b1b;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  opacity: 0.7;
+}
+
+#closeNotification {
+  color: white;
+  position: absolute;
+  top: 9px;
+  right: 12px;
+  cursor: pointer;
+}
+
+#contacts {
+  text-decoration: none;
+  color: #e9be95;
+}
+
+footer {
+  width: 100% !important;
+  margin-top: 45px;
+  color: #e9be95;
+  text-align: center;
+  background: #664426;
+  width: 100%;
+}
+
+#someGif {
+  width: 130px;
+  height: 130px;
+  border-radius: 100px;
+  display: none;
+  position: fixed;
+  top: 40%;
+  z-index: 1000;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 715px;
+  }
+  .mainMethodsList {
+    display: none;
+  }
+  .mainWrapper {
+    width: 100%;
+  }
+  .image-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mediaName {
+    margin-top: -50px;
+  }
+  .coffeLargeText {
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+    padding-right: 10px;
+    color: #5a3b1b;
+  }
+  .methodItem {
+    width: 660px;
+    height: 330px;
+  }
+  .coffeLargeImage {
+    width: 290px;
+    height: 300px;
+    margin-left: -50px;
+  }
+  .mainContentText {
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+  header p {
+    padding-left: 15px;
+  }
+  .buttons-wrapper {
+    padding-right: 15px;
+  }
+  #notification {
+    right: 0;
+    width: 240px;
+    height: 90px;
+    margin-right: 15px;
+  }
+}
+@media (min-width: 481px) {
+  .mediaName {
+    display: none;
+  }
+}

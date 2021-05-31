@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="http://SortableJS.github.io/Sortable/Sortable.js"></script>
+    <title>Coffe alternatives</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header-wrapper">
+          <p>Coffe alternatives</p>
+          <ul class="buttons-wrapper">
+            <li id="contacts">Contacts</li>
+            <li>
+              <a href="#1" id="contacts">Coffee preparation</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <div class="mainWrapper">
+        <div id="notification">
+          <span id="closeNotification">x</span>
+          <p>
+            +380 11 111 11 <br />
+            Остап Бедрій
+          </p>
+        </div>
+        <div class="mainContent">
+          <p class="mainContentText">Альтернативні способи приготування кави</p>
+          <ul class="mainMethodsList" id="items">
+            <li class="coffeMethod1">
+              <a href="#1" class="coffeMethodLink">
+                <div class="image-wrapper">
+                  <img src="./img/4.png" alt="coffe" class="coffeImage" />
+                </div>
+                <p class="coffeText">Chemex</p>
+              </a>
+            </li>
+            <li class="coffeMethod2">
+              <a href="#2" class="coffeMethodLink">
+                <div class="image-wrapper">
+                  <img src="./img/3.png" alt="coffe2" class="coffeImage" />
+                </div>
+                <p class="coffeText">V60</p>
+              </a>
+            </li>
+            <li class="coffeMethod3">
+              <a href="#3" class="coffeMethodLink">
+                <div class="image-wrapper">
+                  <img src="./img/2.png" alt="coffe3" class="coffeImage" />
+                </div>
+                <p class="coffeText">Kalita</p>
+              </a>
+            </li>
+            <li class="coffeMethod4">
+              <a href="#4" class="coffeMethodLink">
+                <div class="image-wrapper">
+                  <img src="./img/1.png" alt="coffe3" class="coffeImage" />
+                </div>
+                <p class="coffeText">Aeropress</p>
+              </a>
+            </li>
+          </ul>
+          <ul class="mainMethodDetails" id="items">
+            <li class="methodItem" id="1">
+              <div class="image-wrapper">
+                <img src="./img/4.png" alt="coffe3" class="coffeLargeImage" />
+                <h1 class="mediaName">Chemex</h1>
+              </div>
+              <p class="coffeLargeText">
+                Цей метод заварювання кави винайшов німецький хімік Пітер
+                Шлюмбом в 1941 році. Він придумав посудину, візуально трохи
+                схожу на декантер для вина або хімічну пробірку. Така собі
+                цільна колба з двох частин, щоб пити каву, не виходячи зі своєї
+                лабораторії.Готувати каву в кемексі на перший погляд доволі
+                просто — колба змочується водою, далі вставляється фільтр, в
+                нього засипається кава і тонкою струйкою проливається гаряча
+                вода протягом 3-4 хвилин.На смак така кава м’яка, адже фільтри
+                для кемексу щільніші, але через довгий контакт з водою насичена
+                і міцна.
+              </p>
+            </li>
+            <li class="methodItem" id="2">
+              <div class="image-wrapper">
+                <img src="./img/3.png" alt="coffe3" class="coffeLargeImage" />
+                <h1 class="mediaName">V60</h1>
+              </div>
+              <p class="coffeLargeText">
+                Також цей спосіб називають Харіо. Цей метод заварювання існує ще
+                з 1908 року, і придумали його в Японії. Для цього виду
+                заварювання вам потрібна буде кава меншого помелу, ніж для
+                Кеміксу. Процедура схожа – спочатку влити зовсім небагато води
+                на мелену каву, (в термінології бариста це називається
+                «передзмочування»), а потім – додати воду, що залишилася.
+                Заварюючи каву цим способом, ви отримаєте легкий і ніжний напій.
+              </p>
+            </li>
+            <li class="methodItem" id="3">
+              <div class="image-wrapper">
+                <img src="./img/2.png" alt="coffe3" class="coffeLargeImage" />
+                <h1 class="mediaName">Kalita</h1>
+              </div>
+              <p class="coffeLargeText">
+                У каліти плоске дно з трьома отворами для більш рівномірної
+                екстракції. Ця особливість даної альтернативи сприяє тому,
+                щоприготування у Каліті дещо відрізняється від приготуванна у
+                Пуровері: за рахунок отворів вода затримується у воронці та
+                додатково заварює каву. На відміну від Пуровера фільтр не щільно
+                прилягає до воронки, завдяки чому повітря окислює каву. Напій
+                виходить більш солодким і тільнішим.
+              </p>
+            </li>
+            <li class="methodItem" id="4">
+              <div class="image-wrapper">
+                <img src="./img/1.png" alt="coffe3" class="coffeLargeImage" />
+                <h1 class="mediaName">Aeropress</h1>
+              </div>
+              <p class="coffeLargeText">
+                Аеропрес винайшов професор стенфордського університету Алан
+                Адлер в 2005 році. Із самого початку це мала бути домашня
+                кавоварка для еспресо. Аеропрес складається з фільтра,
+                фільтротримача, циліндра та поршня. Але в такій інтерпретації
+                кавомашина не користувалась попитом в Америці. Щоб не
+                збанкрутувати, Адлер розіслав близько ста примірників свого
+                винаходу по всьому світу. І одного разу хтось приготував за
+                допомогою аеропресу не еспресо, а фільтр каву. Із тих пір навіть
+                проводять чемпіонати з приготування кави в аеропресі.Аеропрес
+                дає найщільніший смак серед фільтраційних методів, але кава
+                виходить найменш міцна.
+              </p>
+            </li>
+          </ul>
+        </div>
+      <script>
+        var el = document.getElementById('items');
+        Sortable.create(el);
+      </script>
+    </div>
+    <footer>
+      <p>Made by O.Bedrii © 2021</p>
+    </footer>
+    <img id="someGif" src="./img/giphy.gif" />
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
